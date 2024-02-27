@@ -1,0 +1,225 @@
+
+out.elf:     file format elf32-littlearm
+
+SYMBOL TABLE:
+08000000 l    d  .isr_vector	00000000 .isr_vector
+0800012c l    d  .text	00000000 .text
+080014f8 l    d  .rodata	00000000 .rodata
+08001548 l    d  .ARM.exidx	00000000 .ARM.exidx
+20000000 l    d  .data	00000000 .data
+2000043c l    d  .init_array	00000000 .init_array
+20000440 l    d  .fini_array	00000000 .fini_array
+20000444 l    d  .bss	00000000 .bss
+20000498 l    d  .heap	00000000 .heap
+20000598 l    d  .stack	00000000 .stack
+00000000 l    d  .ARM.attributes	00000000 .ARM.attributes
+00000000 l    d  .comment	00000000 .comment
+00000000 l    d  .debug_frame	00000000 .debug_frame
+00000000 l    df *ABS*	00000000 startup.c
+00000000 l    df *ABS*	00000000 crti.o
+00000000 l    df *ABS*	00000000 crtstuff.c
+080014f8 l     O .rodata	00000000 all_implied_fbits
+080014dc l     O .text	00000000 __EH_FRAME_BEGIN__
+0800012c l     F .text	00000000 __do_global_dtors_aux
+20000444 l       .bss	00000001 completed.1
+20000440 l     O .fini_array	00000000 __do_global_dtors_aux_fini_array_entry
+08000150 l     F .text	00000000 frame_dummy
+20000448 l       .bss	00000018 object.0
+2000043c l     O .init_array	00000000 __frame_dummy_init_array_entry
+00000000 l    df *ABS*	00000000 crt0.o
+00000000 l    df *ABS*	00000000 exit.c
+00000000 l    df *ABS*	00000000 impure.c
+20000010 l     O .data	00000428 impure_data
+00000000 l    df *ABS*	00000000 init.c
+00000000 l    df *ABS*	00000000 memset.c
+00000000 l    df *ABS*	00000000 __call_atexit.c
+0800130c l     F .text	00000014 register_fini
+00000000 l    df *ABS*	00000000 atexit.c
+00000000 l    df *ABS*	00000000 fini.c
+00000000 l    df *ABS*	00000000 lock.c
+00000000 l    df *ABS*	00000000 __atexit.c
+00000000 l    df *ABS*	00000000 HLED_prog.c
+00000000 l    df *ABS*	00000000 main.c
+00000000 l    df *ABS*	00000000 MGPIO_prog.c
+00000000 l    df *ABS*	00000000 MRCC_prog.c
+00000000 l    df *ABS*	00000000 MSTICK_prog.c
+20000468 l       .bss	00000001 flag
+00000000 l    df *ABS*	00000000 syscalls.c
+20000470 l       .bss	00000004 heap_end.0
+00000000 l    df *ABS*	00000000 errno.c
+00000000 l    df *ABS*	00000000 crtstuff.c
+08001520 l     O .rodata	00000000 all_implied_fbits
+080014dc l     O .text	00000000 __FRAME_END__
+00000000 l    df *ABS*	00000000 crtn.o
+08000f9c  w    F .text	00000006 EXTI2_IRQHandler
+08000f9c  w    F .text	00000006 TIM8_CC_IRQHandler
+08000fb0 g     F .text	0000000e _getpid
+08000f9c  w    F .text	00000006 SVCall_Handler
+08000f9c  w    F .text	00000006 DebugMon_Handler
+2000047c g     O .bss	00000001 __lock___atexit_recursive_mutex
+08000f9c  w    F .text	00000006 TIM1_CC_IRQHandler
+08000f9c  w    F .text	00000006 HardFault_Handler
+08000d18 g     F .text	00000020 MSTK_enInit
+08000e48 g     F .text	00000038 MSTK_enGetElapsedTime
+08000684 g     F .text	000000dc MGPIO_enSetPortDirection
+08000f9c  w    F .text	00000006 TIM6_IRQHandler
+08000ed0 g     F .text	00000064 SysTick_Handler
+20000474 g     O .bss	00000001 __lock___arc4random_mutex
+08000f9c  w    F .text	00000006 PVD_IRQHandler
+08000fa4 g     F .text	0000000c initialise_monitor_handles
+08000f9c  w    F .text	00000006 SDIO_IRQHandler
+08001550 g       *ABS*	00000000 _sidata
+08000f9c  w    F .text	00000006 PendSV_Handler
+08000f9c  w    F .text	00000006 NMI_Handler
+0800056c g     F .text	00000088 MGPIO_enTogglePin
+08000f9c  w    F .text	00000006 EXTI3_IRQHandler
+20000438 g     O .data	00000004 __atexit_recursive_mutex
+080014d0 g     F .text	0000000c __errno
+08001424 g     F .text	00000002 __retarget_lock_close
+08000f9c  w    F .text	00000006 TIM8_TRG_COM_TIM14_IRQHandler
+20000464 g     O .bss	00000004 STK_Callback
+08000f9c  w    F .text	00000006 TIM1_UP_TIM10_IRQHandler
+080014f8 g       .text	00000000 _etext
+20000444 g       .bss	00000000 _sbss
+08000c90 g     F .text	00000088 MRCC_enDisablePeripheralCLK
+08000f9c  w    F .text	00000006 TIM8_UP_TIM13_IRQHandler
+08000f9c  w    F .text	00000006 USB_HP_CAN_TX_IRQHandler
+08000f9c  w    F .text	00000006 EXTI0_IRQHandler
+08000f9c  w    F .text	00000006 I2C2_EV_IRQHandler
+080005f4 g     F .text	00000090 MGPIO_enGetPinValue
+0800107a g     F .text	0000001e _fstat
+08000f9c  w    F .text	00000006 UsageFault_Handler
+08000f9c  w    F .text	00000006 ADC1_2_IRQHandler
+20000444 g       .bss	00000000 __bss_start__
+20000000 g     O .data	00000000 .hidden __dso_handle
+0800020e g     F .text	00000026 HLED_enSetON
+20000000 g       .data	00000000 _sdata
+08000f9c  w    F .text	00000006 SPI1_IRQHandler
+08000f9c  w    F .text	00000006 CAN_SCE_IRQHandler
+08000f9c  w    F .text	00000006 TAMPER_IRQHandler
+08000f9c  w    F .text	00000006 TIM1_BRK_TIM9_IRQHandler
+20000484 g     O .bss	00000001 __lock___env_recursive_mutex
+08001098 g     F .text	00000014 _isatty
+20000490 g     O .bss	00000001 __lock___sinit_recursive_mutex
+08001544 g     O .rodata	00000004 _global_impure_ptr
+08001220 g     F .text	00000048 __libc_init_array
+08000f9c  w    F .text	00000006 DMA2_Channel2_IRQHandler
+08000f9c  w    F .text	00000006 DMA1_Channel4_IRQHandler
+08000174 g     F .text	00000000 _mainCRTStartup
+080010c4 g     F .text	0000001a _open
+080011a6 g     F .text	0000005a _sbrk
+080014e0 g     F .text	00000000 _init
+08000f9c  w    F .text	00000006 USART3_IRQHandler
+080013f0 g     F .text	0000002c __libc_fini_array
+08000f9c  w    F .text	00000006 RTC_IRQHandler
+20000498 g       .bss	00000000 _ebss
+0800111a g     F .text	00000016 _times
+08000f9c  w    F .text	00000006 DMA1_Channel7_IRQHandler
+08000f34 g     F .text	00000068 Reset_Handler
+08000f9c  w    F .text	00000006 MemMangage_Handler
+08000eb0 g     F .text	00000020 STK_enStop
+08000f9c  w    F .text	00000006 UART5_IRQHandler
+20000488 g     O .bss	00000001 __lock___malloc_recursive_mutex
+08000f9c  w    F .text	00000006 ADC3_IRQHandler
+0800092c g     F .text	000000c8 MGPIO_enSetResetPin
+20000008 g     O .data	00000004 environ
+08000f9c  w    F .text	00000006 TIM4_IRQHandler
+08001130 g     F .text	0000001e _stat
+08000f9c  w    F .text	00000006 CAN_RX1_IRQHandler
+08000f9c  w    F .text	00000006 DMA2_Channel1_IRQHandler
+20000598 g       .heap	00000000 end
+08000f9c  w    F .text	00000006 I2C1_EV_IRQHandler
+08001440 g     F .text	00000002 __retarget_lock_release_recursive
+08001438 g     F .text	00000004 __retarget_lock_try_acquire_recursive
+08000c0c g     F .text	00000084 MRCC_enEnablePeripheralCLK
+08000f9c  w    F .text	00000006 DMA1_Channel6_IRQHandler
+08000f9c  w    F .text	00000006 UART4_IRQHandler
+20000498 g       .bss	00000000 __bss_end__
+08000f9c  w    F .text	00000006 TIM3_IRQHandler
+08000f9c  w    F .text	00000006 RCC_IRQHandler
+08000f9c  w    F .text	00000006 TIM8_BRK_TIM12_IRQHandler
+20000a98 g       .stack	00000000 _enstack
+08001320 g     F .text	000000c4 __call_exitprocs
+08000f9c  w    F .text	00000006 DMA1_Channel1_IRQHandler
+08000f9c g     F .text	00000006 Default_Handler
+08000174 g     F .text	00000000 _start
+080010de g     F .text	0000001e _wait
+08001434 g     F .text	00000004 __retarget_lock_try_acquire
+080010ac g     F .text	00000018 _lseek
+0800151c g     O .rodata	00000002 const_var
+08000f9c  w    F .text	00000006 EXTI15_10_IRQHandler
+08001444 g     F .text	0000008c __register_exitproc
+0800016c  w    F .text	00000000 _stack_init
+080009f4 g     F .text	000001a0 MGPIO_enLockPin
+0800025a g     F .text	00000026 HLED_enToggle
+20000460 g     O .bss	00000001 local_u8var
+08000f9c  w    F .text	00000006 TIM7_IRQHandler
+08000f9c  w    F .text	00000006 TIM5_IRQHandler
+08000b94 g     F .text	00000078 MRCC_enSysClkINIT
+00000500 g       *ABS*	00000000 _stack_size
+08001428 g     F .text	00000002 __retarget_lock_close_recursive
+08000f9c  w    F .text	00000006 EXTI9_5_IRQHandler
+080002b0 g     F .text	000001b4 MGPIO_enSetPinDirection
+2000046c g     O .bss	00000004 __env
+08000f9c  w    F .text	00000006 SPI2_IRQHandler
+08000e80 g     F .text	00000030 MSTK_enRemainingValue
+08001430 g     F .text	00000002 __retarget_lock_acquire_recursive
+08000f9c  w    F .text	00000006 USB_LP_CAN_RX0_IRQHandler
+08000dec g     F .text	0000005c MSTK_enSetIntervalPeriodic
+08000f9c  w    F .text	00000006 sysTick_Handler
+08001268 g     F .text	000000a4 memset
+08000280 g     F .text	00000030 main
+0800114e g     F .text	00000020 _link
+08000234 g     F .text	00000026 HLED_enSetOFF
+08001420 g     F .text	00000002 __retarget_lock_init_recursive
+20000598 g       .heap	00000000 __end__
+08000f9c  w    F .text	00000006 DMA1_Channel5_IRQHandler
+08000f9c  w    F .text	00000006 EXTI4_IRQHandler
+0800141c g     F .text	00000002 __retarget_lock_init
+20000004 g     O .data	00000004 global_u32var
+08000d38 g     F .text	00000058 MSTK_enDelayMS
+080014ec g     F .text	00000000 _fini
+08001184 g     F .text	00000022 _execve
+080013e4 g     F .text	0000000c atexit
+08000f9c  w    F .text	00000006 DMA1_Channel3_IRQHandler
+08000f9c  w    F .text	00000006 FSMC_IRQHandler
+2000000c g     O .data	00000004 _impure_ptr
+08000f9c  w    F .text	00000006 WWDG_IRQHandler
+080010fc g     F .text	0000001e _unlink
+08000f9c  w    F .text	00000006 TIM2_IRQHandler
+0800116e g     F .text	00000016 _fork
+08000f9c  w    F .text	00000006 TIM1_TRG_COM_TIM11_IRQHandler
+20005000 g       .isr_vector	00000000 _estack
+08000f9c  w    F .text	00000006 EXTI1_IRQHandler
+0800102c  w    F .text	00000038 _write
+2000043c g       .data	00000000 _edata
+20000478 g     O .bss	00000001 __lock___at_quick_exit_mutex
+08000f9c  w    F .text	00000006 RTCAlarm_IRQHandler
+08000f9c  w    F .text	00000006 DMA2_Channel4_5_IRQHandler
+08000f9c  w    F .text	00000006 USART2_IRQHandler
+08001200 g     F .text	00000020 exit
+08000fbe g     F .text	00000020 _kill
+08000f9c  w    F .text	00000006 I2C2_ER_IRQHandler
+08000f9c  w    F .text	00000006 DMA1_Channel2_IRQHandler
+08000464 g     F .text	00000108 MGPIO_enSetPinValue
+08000ff2  w    F .text	0000003a _read
+0800142c g     F .text	00000002 __retarget_lock_acquire
+0800143c g     F .text	00000002 __retarget_lock_release
+08000f9c  w    F .text	00000006 FLASH_IRQHandler
+080001e8 g     F .text	00000026 HLED_enInit
+08000fde g     F .text	00000014 _exit
+08000000 g     O .isr_vector	0000012c vectors
+08000f9c  w    F .text	00000006 BusFault_Handler
+08000f9c  w    F .text	00000006 USART1_IRQHandler
+20000480 g     O .bss	00000001 __lock___dd_hash_mutex
+20000494 g     O .bss	00000001 __lock___tz_mutex
+08000f9c  w    F .text	00000006 SPI3_IRQHandler
+08000760 g     F .text	000001cc MGPIO_enSetPortValue
+08000f9c  w    F .text	00000006 I2C1_ER_IRQHandler
+08000d90 g     F .text	0000005c MSTK_enSetIntervalSingle
+2000048c g     O .bss	00000001 __lock___sfp_recursive_mutex
+00000100 g       *ABS*	00000000 _heap_size
+08001064 g     F .text	00000016 _close
+08000f9c  w    F .text	00000006 DMA2_Channel3_IRQHandler
+
+

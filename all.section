@@ -1,0 +1,109 @@
+
+HLED_prog.o:     file format elf32-littlearm
+
+Sections:
+Idx Name          Size      VMA       LMA       File off  Algn
+  0 .text         00000098  00000000  00000000  00000034  2**1
+                  CONTENTS, ALLOC, LOAD, RELOC, READONLY, CODE
+  1 .data         00000000  00000000  00000000  000000cc  2**0
+                  CONTENTS, ALLOC, LOAD, DATA
+  2 .bss          00000000  00000000  00000000  000000cc  2**0
+                  ALLOC
+  3 .comment      0000004a  00000000  00000000  000000cc  2**0
+                  CONTENTS, READONLY
+  4 .ARM.attributes 0000002d  00000000  00000000  00000116  2**0
+                  CONTENTS, READONLY
+
+main.o:     file format elf32-littlearm
+
+Sections:
+Idx Name          Size      VMA       LMA       File off  Algn
+  0 .text         00000030  00000000  00000000  00000034  2**1
+                  CONTENTS, ALLOC, LOAD, RELOC, READONLY, CODE
+  1 .data         00000004  00000000  00000000  00000064  2**2
+                  CONTENTS, ALLOC, LOAD, DATA
+  2 .bss          00000001  00000000  00000000  00000068  2**0
+                  ALLOC
+  3 .rodata       00000002  00000000  00000000  00000068  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, DATA
+  4 .comment      0000004a  00000000  00000000  0000006a  2**0
+                  CONTENTS, READONLY
+  5 .ARM.attributes 0000002d  00000000  00000000  000000b4  2**0
+                  CONTENTS, READONLY
+
+MGPIO_prog.o:     file format elf32-littlearm
+
+Sections:
+Idx Name          Size      VMA       LMA       File off  Algn
+  0 .text         000008e4  00000000  00000000  00000034  2**2
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+  1 .data         00000000  00000000  00000000  00000918  2**0
+                  CONTENTS, ALLOC, LOAD, DATA
+  2 .bss          00000000  00000000  00000000  00000918  2**0
+                  ALLOC
+  3 .comment      0000004a  00000000  00000000  00000918  2**0
+                  CONTENTS, READONLY
+  4 .ARM.attributes 0000002d  00000000  00000000  00000962  2**0
+                  CONTENTS, READONLY
+
+MRCC_prog.o:     file format elf32-littlearm
+
+Sections:
+Idx Name          Size      VMA       LMA       File off  Algn
+  0 .text         00000184  00000000  00000000  00000034  2**2
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+  1 .data         00000000  00000000  00000000  000001b8  2**0
+                  CONTENTS, ALLOC, LOAD, DATA
+  2 .bss          00000000  00000000  00000000  000001b8  2**0
+                  ALLOC
+  3 .comment      0000004a  00000000  00000000  000001b8  2**0
+                  CONTENTS, READONLY
+  4 .ARM.attributes 0000002d  00000000  00000000  00000202  2**0
+                  CONTENTS, READONLY
+
+MSTICK_prog.o:     file format elf32-littlearm
+
+Sections:
+Idx Name          Size      VMA       LMA       File off  Algn
+  0 .text         0000021c  00000000  00000000  00000034  2**2
+                  CONTENTS, ALLOC, LOAD, RELOC, READONLY, CODE
+  1 .data         00000000  00000000  00000000  00000250  2**0
+                  CONTENTS, ALLOC, LOAD, DATA
+  2 .bss          00000005  00000000  00000000  00000250  2**2
+                  ALLOC
+  3 .comment      0000004a  00000000  00000000  00000250  2**0
+                  CONTENTS, READONLY
+  4 .ARM.attributes 0000002d  00000000  00000000  0000029a  2**0
+                  CONTENTS, READONLY
+
+startup.o:     file format elf32-littlearm
+
+Sections:
+Idx Name          Size      VMA       LMA       File off  Algn
+  0 .text         00000070  00000000  00000000  00000034  2**2
+                  CONTENTS, ALLOC, LOAD, RELOC, READONLY, CODE
+  1 .data         00000000  00000000  00000000  000000a4  2**0
+                  CONTENTS, ALLOC, LOAD, DATA
+  2 .bss          00000000  00000000  00000000  000000a4  2**0
+                  ALLOC
+  3 .isr_vector   0000012c  00000000  00000000  000000a4  2**2
+                  CONTENTS, ALLOC, LOAD, RELOC, DATA
+  4 .comment      0000004a  00000000  00000000  000001d0  2**0
+                  CONTENTS, READONLY
+  5 .ARM.attributes 0000002d  00000000  00000000  0000021a  2**0
+                  CONTENTS, READONLY
+
+syscalls.o:     file format elf32-littlearm
+
+Sections:
+Idx Name          Size      VMA       LMA       File off  Algn
+  0 .text         0000025c  00000000  00000000  00000034  2**2
+                  CONTENTS, ALLOC, LOAD, RELOC, READONLY, CODE
+  1 .data         00000004  00000000  00000000  00000290  2**2
+                  CONTENTS, ALLOC, LOAD, RELOC, DATA
+  2 .bss          00000008  00000000  00000000  00000294  2**2
+                  ALLOC
+  3 .comment      0000004a  00000000  00000000  00000294  2**0
+                  CONTENTS, READONLY
+  4 .ARM.attributes 0000002d  00000000  00000000  000002de  2**0
+                  CONTENTS, READONLY

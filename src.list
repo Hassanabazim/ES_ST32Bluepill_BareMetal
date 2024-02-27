@@ -1,0 +1,7 @@
+"src/syscalls.c"
+"Startup/startup.c"
+"MCAL/MRCC/MRCC_prog.c"
+"MCAL/MGPIO/MGPIO_prog.c"
+"MCAL/MSTICK/MSTICK_prog.c"
+"HAL/HLED/HLED_prog.c"
+"src/main.c"

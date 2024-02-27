@@ -1,0 +1,5 @@
+-I "LIB"
+-I "MCAL/MRCC"
+-I "MCAL/MGPIO" 
+-I "MCAL/MSTICK" 
+-I "HAL/HLED"

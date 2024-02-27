@@ -1,0 +1,227 @@
+
+HLED_prog.o:     file format elf32-littlearm
+
+SYMBOL TABLE:
+00000000 l    df *ABS*	00000000 HLED_prog.c
+00000000 l    d  .text	00000000 .text
+00000000 l    d  .data	00000000 .data
+00000000 l    d  .bss	00000000 .bss
+00000000 l    d  .comment	00000000 .comment
+00000000 l    d  .ARM.attributes	00000000 .ARM.attributes
+00000000 g     F .text	00000026 HLED_enInit
+00000000         *UND*	00000000 MGPIO_enSetPinDirection
+00000026 g     F .text	00000026 HLED_enSetON
+00000000         *UND*	00000000 MGPIO_enSetPinValue
+0000004c g     F .text	00000026 HLED_enSetOFF
+00000072 g     F .text	00000026 HLED_enToggle
+00000000         *UND*	00000000 MGPIO_enTogglePin
+
+
+
+main.o:     file format elf32-littlearm
+
+SYMBOL TABLE:
+00000000 l    df *ABS*	00000000 main.c
+00000000 l    d  .text	00000000 .text
+00000000 l    d  .data	00000000 .data
+00000000 l    d  .bss	00000000 .bss
+00000000 l    d  .rodata	00000000 .rodata
+00000000 l    d  .comment	00000000 .comment
+00000000 l    d  .ARM.attributes	00000000 .ARM.attributes
+00000000 g     O .data	00000004 global_u32var
+00000000 g     O .bss	00000001 local_u8var
+00000000 g     O .rodata	00000002 const_var
+00000000 g     F .text	00000030 main
+00000000         *UND*	00000000 MRCC_enSysClkINIT
+00000000         *UND*	00000000 MRCC_enEnablePeripheralCLK
+00000000         *UND*	00000000 HLED_enInit
+00000000         *UND*	00000000 HLED_enSetON
+
+
+
+MGPIO_prog.o:     file format elf32-littlearm
+
+SYMBOL TABLE:
+00000000 l    df *ABS*	00000000 MGPIO_prog.c
+00000000 l    d  .text	00000000 .text
+00000000 l    d  .data	00000000 .data
+00000000 l    d  .bss	00000000 .bss
+00000000 l    d  .comment	00000000 .comment
+00000000 l    d  .ARM.attributes	00000000 .ARM.attributes
+00000000 g     F .text	000001b4 MGPIO_enSetPinDirection
+000001b4 g     F .text	00000108 MGPIO_enSetPinValue
+000002bc g     F .text	00000088 MGPIO_enTogglePin
+00000344 g     F .text	00000090 MGPIO_enGetPinValue
+000003d4 g     F .text	000000dc MGPIO_enSetPortDirection
+000004b0 g     F .text	000001cc MGPIO_enSetPortValue
+0000067c g     F .text	000000c8 MGPIO_enSetResetPin
+00000744 g     F .text	000001a0 MGPIO_enLockPin
+
+
+
+MRCC_prog.o:     file format elf32-littlearm
+
+SYMBOL TABLE:
+00000000 l    df *ABS*	00000000 MRCC_prog.c
+00000000 l    d  .text	00000000 .text
+00000000 l    d  .data	00000000 .data
+00000000 l    d  .bss	00000000 .bss
+00000000 l    d  .comment	00000000 .comment
+00000000 l    d  .ARM.attributes	00000000 .ARM.attributes
+00000000 g     F .text	00000078 MRCC_enSysClkINIT
+00000078 g     F .text	00000084 MRCC_enEnablePeripheralCLK
+000000fc g     F .text	00000088 MRCC_enDisablePeripheralCLK
+
+
+
+MSTICK_prog.o:     file format elf32-littlearm
+
+SYMBOL TABLE:
+00000000 l    df *ABS*	00000000 MSTICK_prog.c
+00000000 l    d  .text	00000000 .text
+00000000 l    d  .data	00000000 .data
+00000000 l    d  .bss	00000000 .bss
+00000004 l       .bss	00000001 flag
+00000000 l    d  .comment	00000000 .comment
+00000000 l    d  .ARM.attributes	00000000 .ARM.attributes
+00000000 g     O .bss	00000004 STK_Callback
+00000000 g     F .text	00000020 MSTK_enInit
+00000020 g     F .text	00000058 MSTK_enDelayMS
+00000078 g     F .text	0000005c MSTK_enSetIntervalSingle
+000000d4 g     F .text	0000005c MSTK_enSetIntervalPeriodic
+00000130 g     F .text	00000038 MSTK_enGetElapsedTime
+00000168 g     F .text	00000030 MSTK_enRemainingValue
+00000198 g     F .text	00000020 STK_enStop
+000001b8 g     F .text	00000064 SysTick_Handler
+
+
+
+startup.o:     file format elf32-littlearm
+
+SYMBOL TABLE:
+00000000 l    df *ABS*	00000000 startup.c
+00000000 l    d  .text	00000000 .text
+00000000 l    d  .data	00000000 .data
+00000000 l    d  .bss	00000000 .bss
+00000000 l    d  .isr_vector	00000000 .isr_vector
+00000000 l    d  .comment	00000000 .comment
+00000000 l    d  .ARM.attributes	00000000 .ARM.attributes
+00000000 g     O .isr_vector	0000012c vectors
+00000000         *UND*	00000000 _estack
+00000000 g     F .text	00000068 Reset_Handler
+00000068  w    F .text	00000006 NMI_Handler
+00000068  w    F .text	00000006 HardFault_Handler
+00000068  w    F .text	00000006 MemMangage_Handler
+00000068  w    F .text	00000006 BusFault_Handler
+00000068  w    F .text	00000006 UsageFault_Handler
+00000068  w    F .text	00000006 SVCall_Handler
+00000068  w    F .text	00000006 DebugMon_Handler
+00000068  w    F .text	00000006 PendSV_Handler
+00000068  w    F .text	00000006 sysTick_Handler
+00000068  w    F .text	00000006 WWDG_IRQHandler
+00000068  w    F .text	00000006 PVD_IRQHandler
+00000068  w    F .text	00000006 TAMPER_IRQHandler
+00000068  w    F .text	00000006 RTC_IRQHandler
+00000068  w    F .text	00000006 FLASH_IRQHandler
+00000068  w    F .text	00000006 RCC_IRQHandler
+00000068  w    F .text	00000006 EXTI0_IRQHandler
+00000068  w    F .text	00000006 EXTI1_IRQHandler
+00000068  w    F .text	00000006 EXTI2_IRQHandler
+00000068  w    F .text	00000006 EXTI3_IRQHandler
+00000068  w    F .text	00000006 EXTI4_IRQHandler
+00000068  w    F .text	00000006 DMA1_Channel1_IRQHandler
+00000068  w    F .text	00000006 DMA1_Channel2_IRQHandler
+00000068  w    F .text	00000006 DMA1_Channel3_IRQHandler
+00000068  w    F .text	00000006 DMA1_Channel4_IRQHandler
+00000068  w    F .text	00000006 DMA1_Channel5_IRQHandler
+00000068  w    F .text	00000006 DMA1_Channel6_IRQHandler
+00000068  w    F .text	00000006 DMA1_Channel7_IRQHandler
+00000068  w    F .text	00000006 ADC1_2_IRQHandler
+00000068  w    F .text	00000006 USB_HP_CAN_TX_IRQHandler
+00000068  w    F .text	00000006 USB_LP_CAN_RX0_IRQHandler
+00000068  w    F .text	00000006 CAN_RX1_IRQHandler
+00000068  w    F .text	00000006 CAN_SCE_IRQHandler
+00000068  w    F .text	00000006 EXTI9_5_IRQHandler
+00000068  w    F .text	00000006 TIM1_BRK_TIM9_IRQHandler
+00000068  w    F .text	00000006 TIM1_UP_TIM10_IRQHandler
+00000068  w    F .text	00000006 TIM1_TRG_COM_TIM11_IRQHandler
+00000068  w    F .text	00000006 TIM1_CC_IRQHandler
+00000068  w    F .text	00000006 TIM2_IRQHandler
+00000068  w    F .text	00000006 TIM3_IRQHandler
+00000068  w    F .text	00000006 TIM4_IRQHandler
+00000068  w    F .text	00000006 I2C1_EV_IRQHandler
+00000068  w    F .text	00000006 I2C1_ER_IRQHandler
+00000068  w    F .text	00000006 I2C2_EV_IRQHandler
+00000068  w    F .text	00000006 I2C2_ER_IRQHandler
+00000068  w    F .text	00000006 SPI1_IRQHandler
+00000068  w    F .text	00000006 SPI2_IRQHandler
+00000068  w    F .text	00000006 USART1_IRQHandler
+00000068  w    F .text	00000006 USART2_IRQHandler
+00000068  w    F .text	00000006 USART3_IRQHandler
+00000068  w    F .text	00000006 EXTI15_10_IRQHandler
+00000068  w    F .text	00000006 RTCAlarm_IRQHandler
+00000068  w    F .text	00000006 TIM8_BRK_TIM12_IRQHandler
+00000068  w    F .text	00000006 TIM8_UP_TIM13_IRQHandler
+00000068  w    F .text	00000006 TIM8_TRG_COM_TIM14_IRQHandler
+00000068  w    F .text	00000006 TIM8_CC_IRQHandler
+00000068  w    F .text	00000006 ADC3_IRQHandler
+00000068  w    F .text	00000006 FSMC_IRQHandler
+00000068  w    F .text	00000006 SDIO_IRQHandler
+00000068  w    F .text	00000006 TIM5_IRQHandler
+00000068  w    F .text	00000006 SPI3_IRQHandler
+00000068  w    F .text	00000006 UART4_IRQHandler
+00000068  w    F .text	00000006 UART5_IRQHandler
+00000068  w    F .text	00000006 TIM6_IRQHandler
+00000068  w    F .text	00000006 TIM7_IRQHandler
+00000068  w    F .text	00000006 DMA2_Channel1_IRQHandler
+00000068  w    F .text	00000006 DMA2_Channel2_IRQHandler
+00000068  w    F .text	00000006 DMA2_Channel3_IRQHandler
+00000068  w    F .text	00000006 DMA2_Channel4_5_IRQHandler
+00000000         *UND*	00000000 __libc_init_array
+00000000         *UND*	00000000 main
+00000000         *UND*	00000000 _etext
+00000000         *UND*	00000000 _sdata
+00000000         *UND*	00000000 _edata
+00000000         *UND*	00000000 _sbss
+00000000         *UND*	00000000 _ebss
+00000068 g     F .text	00000006 Default_Handler
+
+
+
+syscalls.o:     file format elf32-littlearm
+
+SYMBOL TABLE:
+00000000 l    df *ABS*	00000000 syscalls.c
+00000000 l    d  .text	00000000 .text
+00000000 l    d  .data	00000000 .data
+00000000 l    d  .bss	00000000 .bss
+00000004 l       .bss	00000004 heap_end.0
+00000000 l    d  .comment	00000000 .comment
+00000000 l    d  .ARM.attributes	00000000 .ARM.attributes
+00000000 g     O .bss	00000004 __env
+00000000 g     O .data	00000004 environ
+00000000 g     F .text	0000000c initialise_monitor_handles
+0000000c g     F .text	0000000e _getpid
+0000001a g     F .text	00000020 _kill
+00000000         *UND*	00000000 __errno
+0000003a g     F .text	00000014 _exit
+0000004e  w    F .text	0000003a _read
+00000000  w      *UND*	00000000 __io_getchar
+00000088  w    F .text	00000038 _write
+00000000  w      *UND*	00000000 __io_putchar
+000000c0 g     F .text	00000016 _close
+000000d6 g     F .text	0000001e _fstat
+000000f4 g     F .text	00000014 _isatty
+00000108 g     F .text	00000018 _lseek
+00000120 g     F .text	0000001a _open
+0000013a g     F .text	0000001e _wait
+00000158 g     F .text	0000001e _unlink
+00000176 g     F .text	00000016 _times
+0000018c g     F .text	0000001e _stat
+000001aa g     F .text	00000020 _link
+000001ca g     F .text	00000016 _fork
+000001e0 g     F .text	00000022 _execve
+00000202 g     F .text	0000005a _sbrk
+00000000         *UND*	00000000 end
+
+
